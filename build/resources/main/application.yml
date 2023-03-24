@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql:productdb
+    username: postgres
+    password: motdepasse
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+  flyway:
+    url: jdbc:postgresql:productdb
+    user: postgres
+    password: motdepasse
+
+logging:
+  level:
+    org.springframework: info
+    org.hibernate: info
+
+server:
+  port: 8000
